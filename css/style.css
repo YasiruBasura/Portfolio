@@ -37,6 +37,35 @@
 
 }
 
+.dark-theme{
+    
+    /* Main theme colours */
+    --first-colour:#fefefe;                 /* this is a declaration of a variable which has a colour */
+    --second-colour: #6a59d1;
+    --third-colour: #a9afc3;
+
+
+    /* Background colours */
+    --body-bg-colour: #0e1b31;
+    --card-bg-colour: #132347;
+    --modal-bg-colour:#102048;
+    --bg-transparent-colour: rgba(255,255,255,0.1);
+    --transparent-colour-01: rgba(255,255,255,0.1);
+    --line-colour:#d7d7d7;
+
+    /* Colour Filter */
+    --colour-filter:invert(0);
+
+
+  
+
+    /* Scroll bar colours */
+    --scroll-bar-colour: #c1ceff;
+    --scroll-thumb-colour: #282f4e;
+    --scroll-thumb-hover-colour: #454f6b;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -114,6 +143,32 @@ li{
     .nav-items a:hover{
         color: var(--second-colour);
     }
+
+    .theme-btn{
+        z-index: 999999;
+        position: fixed;
+        right: 0;
+        top: 100px;
+        background: var(--transparent-colour);
+        backdrop-filter: blur(20px);
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+        border-radius: 5px 0 0 5px;
+        box-shadow: var(--box-shadow);
+        cursor: pointer;
+
+    }
+
+    .theme-btn .fa-sun, .theme-btn.sun .fa-moon{
+        display: none;
+    }
+
+    .theme-btn.sun .fa-sun{
+        display: block;
+    }
+
+
 
 
 
