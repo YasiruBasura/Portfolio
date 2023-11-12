@@ -7,7 +7,7 @@
     --second-colour: #6a59d1;
     --third-colour: #777;
 
-    
+
     /* Hover colours */
     --hover-colour: #614fd0;
 
@@ -47,3 +47,193 @@
 html{
     scroll-behavior: smooth;
 }
+
+body{
+    color: var(--first-colour);
+    background:var(--body-bg-colour);
+    margin: 2em 0 0 0 ;
+    transition: .5s ease;
+}
+
+a{
+    text-decoration: none;            /*  removes the defualt underline which comes within */
+}
+
+li{
+    list-style: none;
+}
+
+
+
+    /* Header */
+    header{
+        z-index: 99999;                /* higher index valued elments will appear on top of lower index valued elements */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(20px);             /*   blurrs the content behind the header*/
+        transition: .6s ease;
+    }
+
+    .nav-bar{
+        position: relative;
+        height: calc(4rem + 1rem);
+        max-width: 1250px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+        transition: .6s ease;
+
+
+    }
+
+    .nav-bar .logo{
+        color:var(--first-colour);
+        font-size: 1.3em;
+        font-weight: 600;
+
+    }
+
+
+    .nav-items a{
+        color: var(--first-colour);
+        font-size: var(--normal-font-size);
+        font-weight: 500;
+    
+    }
+
+
+    .nav-items a:not(:last-child){         /* this will select all the anchor tags except the last one */
+        margin-right: 50px;
+    }
+
+    .nav-items a:hover{
+        color: var(--second-colour);
+    }
+
+
+
+    /* Home section */
+
+    .home{
+        position: relative;
+        max-width: 1250px;
+        min-height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4rem 2rem;
+        flex-direction: column;
+        
+    }
+
+    .home-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .media-icons{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+
+    .media-icons a{
+        color: var(--second-colour);
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    .media-icons a:hover{
+        color: var(--hover-colour);
+    }
+
+    .home-container .info h2{
+        font-size: 4em;
+        font-weight: 600;
+        line-height: 70px;
+    }
+
+    .home-container .info h3{
+        
+        font-weight: 600;
+        color: var(--third-colour);
+        font-feature-settings: 1.3em;
+        line-height: 50px;
+    }
+    .home-container .info p{
+        color: var(--third-colour);
+        font-size: var(--normal-font-size);
+        max-width: 350px;
+    }
+
+    .btn{
+        background: var(--second-colour);
+        color: #fff;
+        font-size: var(--normal-font-size);
+        font-weight: 500;
+        display: inline-block;
+        margin-top: 25px;
+        padding: 20px 30px;
+        letter-spacing: 1px;
+        border-radius: 10px;
+    }
+
+    .btn:hover{
+        background: var(--hover-colour);
+    }
+
+     .home-img{
+       position: relative;
+    }
+
+    .home-img img{
+        transform: translate(0, 0);
+    }
+
+    .home .scroll-down{
+        color: var(--first-colour);
+        font-size: var(--normal-font-size);
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .home .scroll-down i{
+        color: var(--second-colour);
+        font-size: 1.2em;
+        animation: arrow-down ease 2s infinite;
+    }
+
+    @keyframes arrow-down{
+        0%{
+            transform: translateY(0);
+        }
+        30%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(0);
+        }    
+    }
+
+
+
+
+    /* Common styles for all sections */
+    .flex-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+
+   
+
+
