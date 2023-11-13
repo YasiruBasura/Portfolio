@@ -427,4 +427,286 @@ li{
 
    
 
+    /* Skills section */
+    .skills .container .content{
+        width: 100%;
+    }
 
+    .skills-description {
+        max-width: 700px;
+        margin-bottom: 50px;
+    }
+
+    .skills-description h3{
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+
+    .skills-info{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap:20px;
+        margin: auto;
+    }
+
+    .skills-info h4{
+        margin-bottom: 20px;
+    }
+
+    .skills-info h4 label{
+        background: var(--second-colour);
+        color:#fff;
+        font-size: var(--normal-font-size);
+        font-weight: 400;
+        padding:5px 15px;
+        border-radius: 5px;
+    }
+
+    .education-all{
+        margin-bottom: 80px;
+    }
+
+    .edu-list .item{
+        background: var(--card-bg-colour);
+        box-shadow: var(--box-shadow);
+        border-bottom: 3px solid var(--second-colour);
+        padding:20px;
+        margin-top: 15px;
+        border-radius: 6px;
+        transition: .3s ease;
+    }
+
+    .edu-list .item .year{
+        font-size: var(--small-font-size);
+        margin-bottom: 5px;
+    }
+
+    .edu-list .item p{
+        color: var(--third-colour);
+        font-size: var(--small-font-size);
+    }
+
+    .edu-list .item p span{
+        color: var(--first-colour);
+        font-size: var(--normal-font-size);
+        font-weight: 500;
+    }
+
+
+    .bar{
+        background: var(--card-bg-colour);
+        box-shadow: var(--box-shadow);
+        margin-bottom: 10px;
+        padding:20px;
+        border-radius: 6px;
+        transition: .3s ease;
+    }
+
+    .bar .info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        font-size: var(--small-font-size);
+    }
+
+    .bar .info span{
+        font-weight: 500;
+    }
+
+    .bar .line{
+        position: relative;
+        height: 7px;
+        background: #c5cadf;
+        border-radius: 2px;
+    }
+
+    .bar .line::before{
+        content: '';
+        position:absolute;
+        height: 100%;
+        top:0;
+        left:0;
+        background:var(--second-colour);
+        border-radius: 2px;
+    }
+
+    .bar .html::before{
+        width: 95%;
+    }
+
+    .bar .JavaScript::before{
+        width: 30%;
+    }
+    .bar .html::before{
+        width: 95%;
+    }
+    .bar .html::before{
+        width: 95%;
+    }
+    .bar .html::before{
+        width: 95%;
+    }
+
+
+
+    /* Contact section */
+    .contact .container .content{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .contact-left h2{
+        font-size: 2.1em;
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+
+    .contact-list{
+        margin-bottom: 40px;
+    }
+
+    .contact-list h3{
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .contact-list h3 i{
+        color: var(--second-colour);
+        font-size: 1.3em;
+        margin-right: 10px;
+    }
+
+    .contact-list span{
+        color: var(--third-colour);
+        margin-left: 40px;
+    }
+
+    .contact-list span a{
+        color: var(--third-colour);
+    }
+
+    .contact-right p{
+        color: var(--third-colour);
+        font-size: 1.6em;
+        margin-bottom: 30px;
+    }
+
+    .contact-right p span{
+        color: var(--first-colour);
+        font-weight: 700;
+    }
+
+    .contact-form input, .contact-form textarea{
+        border: none;
+        color: var(--first-colour);
+        background: var(--bg-transparent-colour);
+        font-size: var(--normal-font-size);
+        margin-bottom: 20px;
+        padding: 15px 40px 40px;
+        border-radius: 5px;
+    }
+
+    .contact-form textarea{
+        width: 100%;
+        resize: none;
+    }
+
+    ::placeholder{
+        color: var(--first-colour);
+    }
+
+    .con .first-row input{
+        width:100%;
+    }
+
+    .contact-form .second-row{
+        display:flex;
+        justify-content:space-between ;
+    }
+
+    .contact-form .second-row input{
+        width: 48%;
+    }
+
+    .contact-form .btn{
+        border: none;
+        margin-top: 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
+
+    /* Footer */
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: var(--second-colour);
+        width:100%;
+        margin-top: 50px;
+        padding:3rem 2rem;
+        color: #fff;
+    }
+
+    footer a{
+        color: #fff;
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        max-width: 1150px;
+    }
+
+    .footer-container .about h2{
+        font-size: 3em;
+        font-weight: 600;
+        background: linear-gradient(to top, transparent 0%, #fff 50%);
+        -webkit-background-clip: text;             /* these two are for the older versions of the browsers*/
+        -webkit-text-fill-color: transparent;
+        opacity: .8;
+    }
+
+    .footer-container .about p{
+        font-size: var(--normal-font-size);
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    .footer-container .info,.footer-container .follow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-container .info h3, .footer-container .follow h3{
+        font-size: 1.1em;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .footer-container .info ul, .footer-container .follow ul{
+        display: flex;
+    }
+
+    .footer-container .info a{
+        margin:20px;
+    }
+
+    .footer-container .follow a{
+        font-size: 1.5em;
+        margin:20px;
+    }
+
+    .footer-copyright p{
+        font-size: var(--normal-font-size);
+        font-weight: 300;
+        margin-top: 50px;
+    }
