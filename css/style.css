@@ -24,7 +24,7 @@
     --colour-filter:invert(1);
 
     /* Box shadow */
-    --box-shadow: 0 0 20px rgba(0,0,0 / 10%);
+    --box-shadow: 0px 0px 20px rgba(0 0 0 / 10%);
 
     /* Font size */
     --small-font-size: 0.9em;
@@ -94,6 +94,22 @@ li{
 
 
 
+    /* Scroll bar */
+    ::-webkit-scrollbar{
+        width: 10px;
+        background: var(--scroll-bar-colour);
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background: var(--scroll-thumb-colour);
+        border-radius: 2em;
+    }
+
+    ::-webkit-scrollbar-thumb:hover{
+        background: var(--scroll-thumb-hover-colour);
+    }
+
+
     /* Header */
     header{
         z-index: 99999;                /* higher index valued elments will appear on top of lower index valued elements */
@@ -103,6 +119,12 @@ li{
         left: 0;
         backdrop-filter: blur(20px);             /*   blurrs the content behind the header*/
         transition: .6s ease;
+    }
+
+
+    header.sticky{
+        background: rgba(255, 255, 255, 0.048);
+        box-shadow: var(--box-shadow);
     }
 
     .nav-bar{
@@ -118,6 +140,10 @@ li{
         transition: .6s ease;
 
 
+    }
+
+    header.sticky .nav-bar{
+        height: calc(2.5rem + 1rem);
     }
 
     .nav-bar .logo{
@@ -384,7 +410,7 @@ li{
         column-gap: 30px;
     }
 
-    .about-info .professional-list > * {        /*Gives equal sized flex items */
+    .about-info .professional-list > * {        /*Gives equal sized flex items for all children*/
         flex: 1;
       }
 
