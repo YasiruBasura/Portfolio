@@ -47,3 +47,34 @@ ScrollReveal().reveal('.home .info h2',{delay: 500, origin:'left'});
 ScrollReveal().reveal('.home .info .btn',{delay: 700, origin:'bottom'});
 ScrollReveal().reveal('.media-icons i',{delay: 500, origin:'left',interval:200});  //the interval option is used to delay the reveal of each icon
 ScrollReveal().reveal('.home-img',{delay: 500, origin:'bottom'});
+
+
+
+
+//Portfolio section - Modal
+// const blockBgScroll = document.querySelectorAll('.block-bg-scroll');
+const portfolioModals = document.querySelectorAll('.portfolio-model');
+
+const imgCards = document.querySelectorAll('.img-card');
+const portfolioCloseBtns = document.querySelectorAll('.portfolio-close-btn');
+
+var portfolioModal = function(modalClick){
+    portfolioModals[modalClick].classList.add("active");
+    // blockBgScroll[modalClick].classList.add("block");
+    document.body.classList.add("modal-open");
+}
+imgCards.forEach((imgCard, i) => {
+       imgCard.addEventListener("click", () => {
+            portfolioModal(i);
+        });
+});
+
+portfolioCloseBtns.forEach((portfolioCloseBtn) => { 
+    portfolioCloseBtn.addEventListener("click", () => {
+        portfolioModals.forEach((portfolioModalView) => {
+            portfolioModalView.classList.remove("active");
+            document.body.classList.remove("modal-open");
+        });
+    });
+});
+    
