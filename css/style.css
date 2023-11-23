@@ -185,7 +185,7 @@ li{
         z-index: 999999;
         position: fixed;
         right: 0;
-        top: 100px;
+        top: 120px;
         background: var(--transparent-colour);
         backdrop-filter: blur(20px);
         width: 50px;
@@ -668,7 +668,7 @@ li{
 
     .portfolio-model-body{
         position: relative;
-        height: auto;
+        height:auto;
         background: var(--modal-bg-colour);
         max-width: 1000px;
         margin:20px;
@@ -1010,12 +1010,12 @@ li{
 .nav-menu-btn{
     background: url(../images/menu-btn.png) no-repeat;
     filter: var(--menu-btn-filter);  /* inverts the original colour */
-    background-size:30px;
+    background-size:40px;
     background-position: center;
     width: 40px;
     height:40px;
     cursor: pointer;
-    display:block;
+    
 }
 
 /* Home Section */
@@ -1099,6 +1099,8 @@ li{
     body{
         margin: 5rem 0 0 0;
     }
+
+  
 
     .section-title-01{
         font-size: 3rem;
