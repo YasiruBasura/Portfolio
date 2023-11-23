@@ -150,7 +150,10 @@ li{
         margin-right: auto;
         padding: 0 20px;
         transition: .6s ease;
+    }
 
+    .nav-menu-btn{
+        display: none;
 
     }
 
@@ -1168,6 +1171,7 @@ li{
     width: 40px;
     height:40px;
     cursor: pointer;
+    display: block;
     
 }
 
