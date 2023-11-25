@@ -1019,6 +1019,7 @@ li{
       .footnote p{
         text-align: center;
         max-width: 500px;
+        font-size: var(--small-font-size);
       }
 
 
@@ -1398,4 +1399,9 @@ li{
         margin-bottom: 80px;
     }
     
+    .portfolio-model-body .sec-intro .multiple-img{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
