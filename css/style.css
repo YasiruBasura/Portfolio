@@ -599,7 +599,6 @@ li{
     .edu-item{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         gap: 3rem;
     }
 
@@ -1402,6 +1401,20 @@ li{
     .portfolio-model-body .sec-intro .multiple-img{
         display: flex;
         flex-direction: column;
+    }
+
+    .education-main .edu-item .edu-item-inner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-main .skills-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edu-item-inner{
+        padding: 0%;
     }
 
 }
