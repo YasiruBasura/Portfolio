@@ -833,6 +833,7 @@ li{
         box-shadow: var(--box-shadow);
         
         
+        
     }
 
     .portfolio-model-outer{
@@ -914,6 +915,111 @@ li{
       }
 
 
+      
+
+     
+      /* Newly added stuff */
+      .introduction p{
+        max-width: 700px;
+      }
+      
+      .sec-intro p{
+        max-width: 700px;
+      }
+
+
+      .portfolio-model-body h1{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .main-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .our-team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .our-team h2{
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .our-team img{
+        max-width: 700px;
+        
+      }
+
+      .team-details{
+        font-style: italic;
+        font-size: var(--small-font-size);
+      }
+
+      .introduction h2{
+        text-align: center;
+      }
+
+      .introduction img{
+        max-width: 600px;
+        max-height: auto;
+      }
+
+
+      .introduction{
+        
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .introduction span{
+        font-style: italic;
+        font-size: var(--small-font-size);
+        margin-bottom: 20px;
+      }
+
+      .sec-intro{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      }
+
+      .sec-intro span{
+        font-style: italic;
+        font-size: var(--small-font-size);
+        margin-bottom: 20px;
+      }
+
+      .sec-intro .multiple-img{
+        display: flex;
+        gap: 1rem;
+      }
+      .sec-intro .multiple-img img{
+        max-width: 300px;
+        
+      }
+
+      .footnote{
+        margin-top: 50px;
+        margin-bottom: 70px;
+        font-style: italic;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      .footnote p{
+        text-align: center;
+        max-width: 500px;
+      }
 
 
 
